@@ -1,0 +1,40 @@
+/* Custom CSS for advanced effects */
+:root {
+    --primary: #3b82f6;
+    --primary-dark: #2563eb;
+    --secondary: #10b981;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Copy all existing CSS from the <style> tag */
+.perspective-container {
+    perspective: 2000px;
+}
+
+/* Add these styles for the particles background */
+.particles {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Update the z-index stacking for sections */
+section {
+    position: relative;
+    z-index: 1;
+}
+
+/* ... rest of your existing CSS ... */ 
